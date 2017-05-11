@@ -1,0 +1,48 @@
+.mainWrapp {
+    // max-width: 800px;
+    // min-height: 500px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    margin: 20px auto;
+    center {
+        font-size: 18px;
+        font-weight: 700;
+        text-shadow: 1px 2px 3px #666;
+    }
+}
+.loginFormArea {
+    max-width: 480px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    .form-inline {
+        width: 320px;
+        background: #ccc;
+    }
+    .form-group {
+        margin: 0 0 15px 0;
+    }
+}
+.main-nav {
+    .menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        li {
+            a {
+                display: block;
+                margin: 10px;
+                border: 1px solid darkgreen;
+                background: palegreen;
+                padding: 8px 12px;
+                border-radius: 5px;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
+}

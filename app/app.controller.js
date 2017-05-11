@@ -1,7 +1,11 @@
-angular
-    .module('angApp')
-    .controller('angController', angController);
+(function() {
+    'use strict';
 
-    function angController() {
-        var vm = this;
-    }
+    angular
+        .module('angApp')
+        .controller('mainController', angController);
+
+        function angController() {
+            var vm = this;
+        }
+})();

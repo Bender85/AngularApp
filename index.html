@@ -12,21 +12,25 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/css/app.style.css">
 </head>
-<body class="mainWrapp" ng-controller="angController as ang">
+<body class="mainWrapp" ng-controller="mainController as ang">
     <center>Angular App</center>
     <!-- Navigation -->
 		<main-nav></main-nav>
 
-        <div data-ng-view="" class="container"></div>
+        <!--<div data-ng-view="" class="container"></div>-->
+    <ui-view></ui-view>
 
 <script src="node_modules/angular/angular.min.js"></script>
-<script src="node_modules/angular-route/angular-route.min.js"></script>
+<!--<script src="node_modules/angular-route/angular-route.min.js"></script>-->
+<script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="//unpkg.com/angular-ui-router@1.0.0-beta.3/release/angular-ui-router.js"></script>
 <script src="node_modules/angular-cookies/angular-cookies.min.js"></script>
 <script type="text/javascript" src="node_modules/angular-sanitize/angular-sanitize.min.js"></script>
 
 <script src="app/app.module.js"></script>
 <script src="app/components/main.nav.directive.js"></script>
 <script src="app/views/app.login.controller.js"></script>
+<script src="app/views/app.validation.controller.js"></script>
 <script src="app/app.controller.js"></script>
 </body>
 </html>

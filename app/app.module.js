@@ -4,7 +4,7 @@ angular
         'ngCookies',
         'ui.router'
     ])
-    .config(function($stateProvider) {
+    .config(function($stateProvider, $urlRouterProvider) {
         var helloState = {
             name: 'home',
             url: '/home',
@@ -26,6 +26,7 @@ angular
         $stateProvider.state(helloState);
         $stateProvider.state(loginState);
         $stateProvider.state(validationState);
+        $urlRouterProvider.otherwise('/');
     });
     // .config(config);
     //

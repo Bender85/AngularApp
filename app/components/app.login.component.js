@@ -11,11 +11,12 @@
                 logins: '='
             }
         });
-        function loginController() {
+        function loginController($cookies) {
             var $ctrl = this;
             $ctrl.login = login;
 
             function login() {
+                console.log($cookies);
                 alert('asdasd');
             }
         }

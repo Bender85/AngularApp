@@ -15,9 +15,6 @@ angular
             url: '/login',
             component: 'mainLogin',
             resolve: {
-                // users: function(UserService) {
-                //     return UserService.list();
-                // }
             }
         };
 

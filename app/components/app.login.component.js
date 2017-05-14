@@ -4,8 +4,6 @@
         .module('angApp')
         .component('mainLogin', {
             templateUrl: 'app/views/login.html',
-            // transclude: true,
-            // replace: true,
             controller: loginController,
             bindings: {
                 logins: '='

@@ -24,7 +24,10 @@ angular
         var validationState = {
             name: 'validation',
             url: '/validation',
-            templateUrl: 'app/views/validation.html'
+            component: 'formValidation',
+            resolve: {
+
+            }
         };
 
         $stateProvider.state(helloState);

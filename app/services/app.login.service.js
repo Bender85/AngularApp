@@ -10,7 +10,7 @@
         function authenticationService($http, $q, $cookies, $httpParamSerializerJQLike) {
             return {
                 logine: logine,
-                logOut: logOut,
+                logOut: logOut
             };
             function logine(data) {
                 return $q(function(resolve, reject) {

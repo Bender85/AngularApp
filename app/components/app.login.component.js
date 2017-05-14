@@ -26,7 +26,11 @@
             function login() {
                 // console.log($ctrl.user);
                 authenticationService.logine($ctrl.user).then(resolve, reject);
-                function resolve(response) {
+                function resolve(resolve) {
+                    if(resolve.data.errors !== null) {
+                        console.log('asdasd');
+                    }
+                    $cookies.put('user', $ctrl.user);
                     console.log(response);
                 }
                 function reject(err) {
